@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>FreelanCE</title>
+    <style>
+      body {
+        background: #ffffff;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid bg-primary">
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand text-light" href="/">FreelanCE</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 container">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="/developers">Developers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="/designers">Designers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="/marketing">Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="/photographers"
+                  >Photographers</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link bg-light text-primary rounded"
+                  href="/register"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <div class="container p-4">
+        <h2 class="text-center p-3">Become a freelancer</h2>
+        <form action="/register" method="post">
+          <label for="name" class="form-label form-text text-black"
+            >Your name:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="f_name"
+            id="name"
+            required
+          />
+
+          <label for="profession" class="form-label form-text text-black"
+            >Your profession:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="f_profession"
+            id="profession"
+            required
+          />
+
+          <label for="desc" class="form-label form-text text-black"
+            >About you:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="f_desc"
+            id="desc"
+            required
+          />
+
+          <label for="price" class="form-label form-text text-black"
+            >Your price (per hour):</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="f_price"
+            id="price"
+            step="0.01"
+            required
+          />
+
+          <button type="submit" class="btn btn-primary mt-3 rounded">
+            Register
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="container-fluid bg-primary d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+    >
+      <p class="col-md-4 mb-0 text-light">
+        <a
+          href="https://github.com/mario-leandro"
+          class="text-light text-decoration-none link-dark"
+          target="_blank"
+          >Mario Leandro</a
+        >
+        &copy; 2023
+      </p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none text-light"
+      >
+        FreelanCE
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="/" class="nav-link px-2 text-light">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://github.com/mario-leandro"
+            class="nav-link px-2 text-light"
+            target="_blank"
+            >Github</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://mario-leandro.netlify.app/"
+            class="nav-link px-2 text-light"
+            target="_blank"
+            >Portfólio</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
