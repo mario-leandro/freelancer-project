@@ -1,9 +1,11 @@
 {
-  "name": "projeto-freelancer",
+  "homepage": "https://mario-leandro.github.io/freelancer-project/",
+  "name": "freelancer-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
