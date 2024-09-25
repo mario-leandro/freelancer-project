@@ -1,0 +1,235 @@
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-info {
+  width: 100%;
+  min-height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-info .title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-info .title h1 {
+  color: #007BFF;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-info .text {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .main-container .main-content .main-info .text p {
+  color: #343A40;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-cards {
+  width: 100%;
+  min-height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .title h2 {
+  color: #007BFF;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-cards .cards {
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .main-container .main-content .main-cards .cards .card {
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+main .main-container .main-content .main-cards .cards .card .card-image {
+  width: 100%;
+  height: 150px;
+  background: #007BFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+main .main-container .main-content .main-cards .cards .card .card-image i {
+  font-size: 100px;
+  color: #FFFFFF;
+}
+main .main-container .main-content .main-cards .cards .card .card-body {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-name {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-name h3 {
+  color: #007BFF;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-name h5 {
+  color: #343A40;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-description {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-description p {
+  color: #343A40;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-price {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-price p {
+  color: #343A40;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-cards .cards .card .card-body .card-buttons .btn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background: #007BFF;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main .main-container .main-content .main-info .title h1 {
+    font-size: 20px;
+  }
+  main .main-container .main-content .main-info .text p {
+    font-size: 14px;
+  }
+  main .main-container .main-cards .title h2 {
+    font-size: 20px;
+  }
+  main .main-container .main-cards .cards .card {
+    width: 250px;
+    min-height: 250px;
+  }
+  main .main-container .main-cards .cards .card .card-image i {
+    font-size: 80px;
+  }
+  main .main-container .main-cards .cards .card .card-body .card-name h3 {
+    font-size: 16px;
+  }
+  main .main-container .main-cards .cards .card .card-body .card-name h5 {
+    font-size: 14px;
+  }
+  main .main-container .main-cards .cards .card .card-body .card-description p {
+    font-size: 14px;
+  }
+  main .main-container .main-cards .cards .card .card-body .card-price p {
+    font-size: 14px;
+  }
+  main .main-container .main-cards .cards .card .card-body .card-buttons .btn {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

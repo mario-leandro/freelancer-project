@@ -1,0 +1,140 @@
+@import "_variables.sass"
+
+footer
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: $bg-primary
+
+    .footer-container
+        width: 95%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .footer-content
+            width: 95%
+            min-height: 400px
+            padding: 20px
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+
+            .logo
+                width: 100%
+                height: 50px
+                display: flex
+                justify-content: flex-start
+                align-items: center
+
+                a
+                    color: $text-white
+                    font-size: 20px
+                    font-weight: 700
+                    letter-spacing: 1px
+            
+            .footer-divs
+                width: 100%
+                min-height: auto
+                display: flex
+                flex-flow: row wrap
+                justify-content: space-around
+                align-items: flex-start
+                gap: 10px
+
+                .footer-div
+                    width: 100px
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    .footer-title
+                        width: 100%
+                        height: auto
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+
+                        h3
+                            color: $text-white
+                            font-size: 20px
+                            font-weight: 700
+                            letter-spacing: 1px
+
+                    .footer-links
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+
+                        .link
+                            width: 100%
+                            height: auto
+                            display: flex
+                            justify-content: flex-start
+                            align-items: center
+
+                            a
+                                color: $text-white
+                                font-size: 16px
+                                font-weight: 400
+                                letter-spacing: 1px
+                                margin: 5px 0
+
+                                &:hover
+                                    transition: .3s
+                                    color: $text-dark
+
+            .copy
+                width: 100%
+                height: 50px
+                display: flex
+                justify-content: center
+                align-items: center
+
+                p
+                    color: $text-white
+                    font-size: 16px
+                    font-weight: 400
+                    letter-spacing: 1px
+                    margin: 5px 0
+
+                    a
+                        color: $text-white
+                        font-size: 16px
+                        font-weight: 400
+                        letter-spacing: 1px
+                        margin: 5px 0
+
+                        &:hover
+                            transition: .3s
+                            color: $text-dark
+
+@media screen and ( max-width: 768px )
+    footer
+        .footer-container
+            .footer-content
+                .footer-divs
+                    .footer-div
+                        .footer-title
+                            h3
+                                font-size: 16px
+                        .footer-links
+                            .link
+                                a
+                                    font-size: 14px
+                .copy
+                    p
+                        font-size: 14px
+                    a
+                        font-size: 14px

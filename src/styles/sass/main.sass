@@ -1,0 +1,248 @@
+@import "_variables.sass"
+    
+main
+    width: 100%
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .main-container
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .main-content
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            .main-info
+                width: 100%
+                min-height: 80dvh
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+                .title
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    h1
+                        color: $text-primary
+                        font-size: 28px
+                        font-weight: 700
+                        letter-spacing: 1px
+
+                .text
+                    width: 100%
+                    min-height: auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: flex-start
+
+                    p
+                        color: $text-dark
+                        font-size: 16px
+                        font-weight: 400
+                        letter-spacing: 1px
+
+            .main-cards
+                width: 100%
+                min-height: 80dvh
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                align-items: center
+
+                .title
+                    width: 100%
+                    height: 50px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    h2
+                        color: $text-primary
+                        font-size: 30px
+                        font-weight: 700
+                        letter-spacing: 1px
+                
+                .cards
+                    width: 100%
+                    height: calc( 100% - 50px )
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: flex-start
+
+                    .card
+                        width: 300px
+                        min-height: 300px
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-start
+                        align-items: center
+                        margin: 10px
+                        background: $bg-white
+                        border-radius: 5px
+                        box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+
+                        .card-image
+                            width: 100%
+                            height: 150px
+                            background: $bg-primary
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            border-radius: 5px 5px 0 0
+                            
+                            i
+                                font-size: 100px
+                                color: $text-white
+
+                        .card-body
+                            width: 100%
+                            height: auto
+                            padding: 10px
+                            display: flex
+                            flex-direction: column
+                            justify-content: center
+                            align-items: center
+
+                            .card-name
+                                width: 100%
+                                height: auto
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+
+                                h3
+                                    color: $text-primary
+                                    font-size: 20px
+                                    font-weight: 700
+                                    letter-spacing: 1px
+
+                                h5
+                                    color: $text-dark
+                                    font-size: 16px
+                                    font-weight: 400
+                                    letter-spacing: 1px
+
+                            .card-description
+                                width: 100%
+                                min-height: 70px
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+
+                                p
+                                    color: $text-dark
+                                    font-size: 16px
+                                    font-weight: 400
+                                    letter-spacing: 1px
+
+                            .card-price
+                                width: 100%
+                                height: auto
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+
+                                p
+                                    color: $text-dark
+                                    font-size: 16px
+                                    font-weight: 700
+                                    letter-spacing: 1px
+                                    margin-top: 10px
+                                    margin-bottom: 10px
+
+                            .card-buttons
+                                width: 100%
+                                height: auto
+                                display: flex
+                                flex-direction: row
+                                justify-content: center
+                                align-items: center
+
+                                .btn
+                                    width: 100px
+                                    height: 40px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    margin: 10px
+                                    background: $bg-primary
+                                    color: $text-white
+                                    font-size: 16px
+                                    font-weight: 700
+                                    letter-spacing: 1px
+                                    border: none
+                                    border-radius: 5px
+                                    cursor: pointer
+
+@media screen and ( max-width: 768px )
+    main
+        .main-container
+            .main-content
+                .main-info
+                    .title
+                        h1
+                            font-size: 20px
+
+                    .text
+                        p
+                            font-size: 14px
+
+            .main-cards
+                .title
+                    h2
+                        font-size: 20px
+
+                .cards
+                    .card
+                        width: 250px
+                        min-height: 250px
+
+                        .card-image
+                            i
+                                font-size: 80px
+
+                        .card-body
+                            .card-name
+                                h3
+                                    font-size: 16px
+
+                                h5
+                                    font-size: 14px
+
+                            .card-description
+                                p
+                                    font-size: 14px
+
+                            .card-price
+                                p
+                                    font-size: 14px
+
+                            .card-buttons
+                                .btn
+                                    width: 80px
+                                    height: 30px
+                                    font-size: 14px
+                                    margin: 5px
+    

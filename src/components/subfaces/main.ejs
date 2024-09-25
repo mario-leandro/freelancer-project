@@ -1,0 +1,61 @@
+<main>
+    <div class="main-container">
+        <div class="main-content">
+            <div class="main-info">
+                <div class="title">
+                    <h1>FreelanCE</h1>
+                </div>
+
+                <div class="text">
+                    <p>
+                        Welcome to FreelanCE, the platform where you can find the best
+                        professionals in the market. Here you can find developers, designers,
+                        marketers, and photographers. If you are a professional, you can also
+                        register and offer your services.
+                    </p>
+                    
+                    <p>
+                        NOTE: The amount must be paid per hour worked for example: $0.4 x
+                        4h(240 minutes) = $96
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-cards">
+                <div class="title">
+                    <h2>All Freelancers</h2>
+                </div>
+
+                <div class="cards">
+                    <% rows.forEach( (item) => { %>
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="card-name">
+                                <h3><%= item.f_name %></h3>
+                                <h5><%= item.f_profession %></h5>
+                            </div>
+                            
+                            <div class="card-description">
+                                <p><%= item.f_desc %></p>
+                            </div> 
+
+                            <div class="card-price">
+                                <p>$<%= item.f_price %></p>
+                            </div>
+
+                            <div class="card-buttons">
+                                <a href="/edit/<%= item.f_name %>" class="btn">Edit</a>
+                                <a href="/delete/<%= item.f_name %>" class="btn">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

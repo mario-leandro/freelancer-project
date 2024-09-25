@@ -1,0 +1,35 @@
+<main>
+    <div class="main-container">
+        <div class="main-content">
+            <div class="main-title">
+                <h2>Edit your data</h2>
+            </div>
+
+            <div class="main-form">
+                <form action="/edit/<%= row.f_name %>" method="post">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your name:</label>
+                        <input type="text" class="form-control" name="f_name" id="name" value="<%= row.f_name %>" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profession" class="form-label">Your profession:</label>
+                        <input type="text" class="form-control" name="f_profession" id="profession" value="<%= row.f_profession %>" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="desc" class="form-label">About you:</label>
+                        <input type="text" class="form-control" name="f_desc" id="desc" value="<%= row.f_desc %>" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price" class="form-label">Your price (per hour):</label>
+                        <input type="text" class="form-control" name="f_price" id="price" value="<%= row.f_price %>" step="0.01" required />
+                    </div>
+
+                    <div class="form-group"><button type="submit" class="btn">Edit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

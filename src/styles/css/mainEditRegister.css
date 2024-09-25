@@ -1,0 +1,99 @@
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content {
+  width: 95%;
+  min-height: 80dvh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-title h2 {
+  color: #007BFF;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-form {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-form form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-form form .form-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main-container .main-content .main-form form .form-group label {
+  color: #343A40;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-form form .form-group input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #343A40;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .main-container .main-content .main-form form .form-group button {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background: #007BFF;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+main .main-container .main-content .main-form form .form-group button:hover {
+  background: #343A40;
+}
+
+/*# sourceMappingURL=mainEditRegister.css.map */
